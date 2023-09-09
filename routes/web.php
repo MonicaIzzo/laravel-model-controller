@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerMovie;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [ControllerMovie::class, 'index'])->name('home');
