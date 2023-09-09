@@ -20,7 +20,7 @@
     @include('includes.header')
 
     {{-- Contenuto del MAIN che varia ad ogni PAGINA --}}
-    <main>
+    <main class="container">
         @yield('main_content')
     </main>
 
